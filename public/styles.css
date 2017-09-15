@@ -10,13 +10,12 @@ p{
   font-family: 'Fredoka One', cursive;
   font-size: 30px;
   text-align: center;
-  color: #e07243
 }
 ul{
   font-family: 'Fredoka One', cursive;
   font-size: 20px;
-  color:#e07243
 }
+
 label{
   font-family: 'Fredoka One', cursive;
 }
@@ -25,7 +24,21 @@ label{
   margin-bottom: 50px;
   border-radius: 2em;
   background-color: #a8f3f7;
+  font-family: 'Fredoka One', cursive;
 }
 .card h3{
+  font-family: 'Permanent Marker', cursive;
+}
+h4{
+  text-align: center;
+}
+button{
+  text-align:center;
+}
+.output{
+  padding: 2em;
+  font-family: 'Fredoka One', cursive;
+}
+.output h5{
   font-family: 'Permanent Marker', cursive;
 }

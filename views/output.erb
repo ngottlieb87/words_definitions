@@ -1,21 +1,21 @@
-<div class= "card">
-<h1>Your word: <%= @display_word.word %> <h1>
-<h3>Your Word Definitions:</h3>
-<% @definition_list.each do |item| %>
-<% if item.definition_id == @id %>
-<h5><%= item.definition %></h5>
+<div class= "card output">
+  <h1>Your word: <%= @display_word.word %> <h1>
+  <h3>Your Word Definitions:</h3>
+  <% @definition_list.each do |item| %>
+  <% if item.definition_id == @id %>
+  <h5><%= item.definition %></h5>
+    <% end %>
   <% end %>
-<% end %>
-<h2> Ok, now that we have your word lets get it's definition: </h2>
+  <h2> Ok, now that we have your word lets get it's definition: </h2>
 
-<form action= '/output/<%= @id %>' method='post'>
-  <div class="form-group">
-    <label for="definition">Type your definition here!</label>
-    <input id= "definition" name= "definition" class= "form-control" type= "text">
-  </div>
-  <button type= "submit" class= "btn btn-primary"> Put that definition up there!</button>
-</form>
-<br>
-<br>
-<a href= '/'><h4> Back to homepage! </h4></a>
+  <form action= '/output/<%= @id %>' method='post'>
+    <div class="form-group">
+      <label for="definition">Type your definition here!</label>
+      <input id= "definition" name= "definition" class= "form-control" type= "text">
+    </div>
+    <button type= "submit" class= "btn btn-primary"> Put that definition up there!</button>
+  </form>
+  <br>
+  <br>
+  <a href= '/'><h4> Back to homepage! </h4></a>
 </div>
