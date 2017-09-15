@@ -11,7 +11,8 @@ _This webpage will allow you to write in a word. Click that word and then write 
 ## Setup
 
 * _Open Web Browser Of Your Choice._
-* _Check it out on Heroku: https://boiling-savannah-55879.herokuapp.com/._
+* _Check it out on Heroku:_
+  _https://boiling-savannah-55879.herokuapp.com/._
 
 ## Known Bugs
 
