@@ -11,7 +11,7 @@ _This webpage will allow you to write in a word. Click that word and then write 
 ## Setup
 
 * _Open Web Browser Of Your Choice._
-* _Type into url bar._
+* _Check it out on Heroku: https://boiling-savannah-55879.herokuapp.com/._
 
 ## Known Bugs
 
@@ -34,10 +34,6 @@ _nogpdx@gmail.com_
 ## Technologies Used
 
 _HTML, CSS, Bootstrap, sinatra, ruby_
-
-## Screen Shot
-
-<!-- ![Screen Shot](https://github.com/ngottlieb87/pizzaDelivery/blob/master/img/screenShotPizza.png) -->
 
 ### License
 
