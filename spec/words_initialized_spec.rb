@@ -17,3 +17,17 @@ describe('list path', {:type => :feature}) do
     expect(page).to have_content('balloon')
   end
 end
+
+describe('list path', {:type => :feature}) do
+  it "will display inputted definition to a list" do
+    visit('/output/1')
+    fill_in('definition', :with=> 'a fun fair keepsake')
+    click_button('Put that definition up there!')
+    expect(page).to have_content('a fun fair keepsake')
+  end
+    it "take user back to home page" do
+    visit('/output/1')
+    click_link('Back to homepage!')
+    expect(page).to have_content("Hey lets enter some words! balloon Write your words here! (one at a time please! it hurts my brain!) Throw that word up there!")
+  end
+end

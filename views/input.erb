@@ -1,12 +1,27 @@
-<h1>Hey lets enter some words!</h1>
-<% @list.each do |words| %>
-  <h3><a href='/output/<%= words.id %>'><%= words.word %></h3></a>
-<% end %>
 
-<form action='/' method= 'post'>
-  <div class = "form-group">
-    <label for="word_descrip"> Write your words here! (one at a time please! it hurts my brain!)</label>
-    <input id="word" name= "word" class= "form-control" type="text">
+<div class="card">
+  <div class= "card-head">
+    <h1>Welcome To Your Very Own Dictionary!</h1>
+    <p>Here are some directions to get you started:</p>
+    <ul>
+      <li>Write any word you like in the box below. Cant think of one? How about what evers directly behind you!</li>
+      <li>The word will be placed in a list up above. Whe you're ready click on the word!</li>
+      <li>You will be taken to a new page with word and an area to write your very own description of the word! Feel free to add one or more if you feel. I ain't your mother!</li>
+      <li>When you're all done click the "Take me back home!" button and we can do this all over again!</li>
+    </ul>
+    <div class= "card-body">
+      <h1>Hey lets enter some words!</h1>
+      <% @list.each do |words| %>
+        <h3><a href='/output/<%= words.id %>'><%= words.word %></h3></a>
+      <% end %>
+
+      <form action='/' method= 'post'>
+        <div class = "form-group">
+          <label for="word_descrip"> Write your words here!</label>
+          <input id="word" name= "word" class= "form-control" placeholder= "One at a time please! it hurts my brain!"type="text">
+        </div>
+        <button type="submit" class="btn btn-primary"> Throw that word up there!</button>
+      </form>
+    </div>
   </div>
-  <button type="submit" class="btn btn-primary"> Throw that word up there!</button>
-</form>
+</div>

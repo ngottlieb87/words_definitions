@@ -1,7 +1,12 @@
-<h3> <%= @display_word.word %> <h3>
-
-
-<h2> Ok, now that we have your word lets get it's definintion </h2>
+<div class= "card">
+<h1>Your word: <%= @display_word.word %> <h1>
+<h3>Your Word Definitions:</h3>
+<% @definition_list.each do |item| %>
+<% if item.definition_id == @id %>
+<h5><%= item.definition %></h5>
+  <% end %>
+<% end %>
+<h2> Ok, now that we have your word lets get it's definition: </h2>
 
 <form action= '/output/<%= @id %>' method='post'>
   <div class="form-group">
@@ -10,5 +15,7 @@
   </div>
   <button type= "submit" class= "btn btn-primary"> Put that definition up there!</button>
 </form>
-
-<a href= '/'><h4> Back to the homepage! </h4></a>
+<br>
+<br>
+<a href= '/'><h4> Back to homepage! </h4></a>
+</div>

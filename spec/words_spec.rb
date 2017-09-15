@@ -30,3 +30,30 @@ end
     end
   end
 end
+
+describe("Definition") do
+  before() do
+    Kids_def.clear_def()
+  end
+
+  describe(".def_all") do
+    it("list of definitions begins with no content") do
+      expect(Kids_def.def_all).to(eq([]))
+    end
+    describe("#def_save") do
+      it("it will save definitions to list") do
+        lions = Kids_def.new({:definition => "a big scary cool cat", :definition_id=> @id})
+        lions.def_save
+        expect(Kids_def.def_all).to(eq([lions]))
+      end
+    end
+    describe(".clear_def") do
+      it("clear all existing definitions and definition ids from the list") do
+        monkey= Kids_def.new({:definition=>"funny jungle animal", :definition_id=>@id})
+        monkey.def_save
+        Kids_def.clear_def
+        expect(Kids_def.def_all).to(eq([]))
+      end
+    end
+  end
+end
