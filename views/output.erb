@@ -1,2 +1,14 @@
 <h3> <%= @display_word.word %> <h3>
-<a href= '/'><h4> Back to the homepage! </h4>
+
+
+<h2> Ok, now that we have your word lets get it's definintion </h2>
+
+<form action= '/output/<%= @id %>' method='post'>
+  <div class="form-group">
+    <label for="definition">Type your definition here!</label>
+    <input id= "definition" name= "definition" class= "form-control" type= "text">
+  </div>
+  <button type= "submit" class= "btn btn-primary"> Put that definition up there!</button>
+</form>
+
+<a href= '/'><h4> Back to the homepage! </h4></a>
