@@ -1,0 +1,12 @@
+<h1>Hey lets enter some words!</h1>
+<% @list.each do |words| %>
+  <h3><a href='/output/<%= words.id %>'><%= words.word %></h3></a>
+<% end %>
+
+<form action='/' method= 'post'>
+  <div class = "form-group">
+    <label for="word_descrip"> Write your words here! (one at a time please! it hurts my brain!)</label>
+    <input id="word" name= "word" class= "form-control" type="text">
+  </div>
+  <button type="submit" class="btn btn-primary"> Throw that word up there!</button>
+</form>

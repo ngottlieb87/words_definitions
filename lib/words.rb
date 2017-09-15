@@ -2,11 +2,10 @@ class Word
   @@word_list = []
 
   attr_reader(:id)
-  attr_accessor(:input_word, :definition)
+  attr_accessor(:word)
 
   def initialize(attributes)
-    @word = attributes.fetch(:input_word)
-    @def = attributes.fetch(:definition)
+    @word = attributes.fetch(:word)
     @id = @@word_list.length + 1
   end
 
@@ -15,9 +14,9 @@ class Word
   end
 
   def self.find(id)
-    word_id = id.to_i
+    word_id = id.to_i()
     @@word_list.each do |word|
-      if words.id == word_id
+      if word.id == word_id
         return word
       end
     end
