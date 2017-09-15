@@ -16,5 +16,10 @@ post('/') do
   new_word.save()
   @list= Word.all()
   erb(:input)
-
+end
+get('/output/:id') do
+  @list = Word.all()
+  @id = params[:id]
+  @display_word = Word.find(@id)
+  erb(:output)
 end
