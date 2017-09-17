@@ -42,9 +42,9 @@ describe("Definition") do
     end
     describe("#def_save") do
       it("it will save definitions to list") do
-        lions = Kids_def.new({:definition => "a big scary cool cat", :definition_id=> @id})
-        lions.def_save
-        expect(Kids_def.def_all).to(eq([lions]))
+        lion = Kids_def.new({:definition => "a big scary cool cat", :definition_id=> @id})
+        lion.def_save
+        expect(Kids_def.def_all).to(eq([lion]))
       end
     end
     describe(".clear_def") do

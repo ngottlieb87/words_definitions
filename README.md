@@ -6,7 +6,7 @@
 
 ## Description
 
-_This webpage will allow you to write in a word. Click that word and then write its definition for safe keeping!_
+_This webpage will allow you to write in a word and give it a definition. Click that word and then write its definition for safe keeping!_
 
 ## Setup
 
@@ -20,12 +20,14 @@ _This webpage will allow you to write in a word. Click that word and then write 
 
 ## Specs
 
-| Behavior    |  Input        | Output |
+| Behavior |  Input | Output |
 | ------------- |:-------------:| -----:|
 | Receives a word and displays it in a list to the top of the page | "Monkey" | "Monkey" |
-| Can add multiple words to be displayed | "Tacos" | "Monkey" "Tacos" |
-| Click on word and takes you to a new page with the word and allows you to type a definition |  "a fun jungle animal found through out Asia, Africa and South America" |
-| Add additional definitions to the word| Monkeys like to live in trees and normally have long tails |
+| Can add multiple words to be displayed | "Tacos" | "Monkey" |
+| | | "Tacos" |
+| Click on word and takes you to a new page with the word and allows you to type a definition |  "a fun jungle animal found through out Asia, Africa and South America" | "a fun jungle animal found through out Asia, Africa and South America"|
+| Add additional definitions to the word |Monkeys like to live in trees and normally have long tails  | "a fun jungle animal found through out Asia, Africa and South America" |
+| | | Monkeys like to live in trees and normally have long tails |
 
 ## Support and contact details
 
@@ -34,7 +36,7 @@ _nogpdx@gmail.com_
 
 ## Technologies Used
 
-_HTML, CSS, Bootstrap, sinatra, ruby_
+_HTML, CSS, Bootstrap, Sinatra, Ruby_
 
 ### License
 
